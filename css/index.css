@@ -134,6 +134,7 @@ table {
   padding: 0;
   max-width: 100%;
 }
+/*  ----- Home ---- About ---- Contact ---- Mobile ---- Animation ----- */
 
 /*  --------------------- Home Page Styles Here -----------------------  */
 
@@ -190,12 +191,22 @@ p {
 .image-divider {
   width: 100%;
   margin: 10px auto 30px;
+  position: relative;
 }
+
+/* #slide-in {
+  position: absolute;
+  left: -1500px;
+  width: 1500px;
+  animation: slide 0.8s forwards;
+  animation-delay: 1s;
+} */
 
 .top-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 250px;
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
 }
@@ -313,6 +324,7 @@ footer nav a {
 .about-wrapper {
   border-bottom: 1px dotted #000;
   margin: 20px auto;
+  margin-top: 250px;
   padding-bottom: 20px;
   width: 100%;
 }
@@ -352,4 +364,108 @@ footer nav a {
 
 .bottom-section {
   margin: 25px 0 45px;
+}
+
+/*  -----------------  Contact Page Styles Here  ----------------- */
+
+.image-divider {
+  width: 100%;
+}
+
+.image-divider img {
+  height: 200px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 250px auto 40px;
+  border: 2px dotted #000;
+}
+
+input {
+  margin: 20px;
+  padding: 20px 10px;
+  font-size: 1.3em;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+.submit-button {
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #aa5a18;
+}
+
+/*  --------------------- Mobile View Media Queries (600px)  ------------------ */
+
+@media only screen and (max-width: 600px) {
+  /*  --------------- Home Page -------------  */
+
+  .container {
+    width: 95%;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .nav-wrapper img {
+    margin-bottom: 10px;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-content .text-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  /*  --------------------  About Page  ------------- */
+
+  .middle-section {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 95%;
+    margin: auto;
+  }
+
+  .card a {
+    width: 95%;
+  }
+}
+
+/*  -------------------  Image Animation  ------------- */
+
+#slide-in {
+  position: absolute;
+  left: -1500px;
+  width: 1500px;
+  animation: slide 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
 }
