@@ -309,3 +309,47 @@ footer nav a {
 }
 
 /*  --------------------  About Page Styles Here -------------------   */
+
+.about-wrapper {
+  border-bottom: 1px dotted #000;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.middle-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dotted #000;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 32%;
+  text-align: center;
+  color: #000;
+  margin: 25px 0;
+}
+
+/*  ----------------  Bottom Section Styles  ------------------s */
+
+.bottom-section {
+  margin: 25px 0 45px;
+}
